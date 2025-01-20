@@ -1,0 +1,7 @@
+services:
+  whisper:
+    container_name: whisper-web
+    image: whisper-web
+    ports:
+      - 3000:3000
+    restart: unless-stopped
