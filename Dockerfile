@@ -1,2 +1,8 @@
-FROM ubuntu:latest
-FROM python:3.12
+FROM node:23.3.0-alpine
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD["npm", "start"]
