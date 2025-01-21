@@ -1,7 +1,7 @@
 services:
   whisper:
-    container_name: whisper-web
-    image: whisper-web
+    container_name: whisper
+    image: alexanderwinters/cdhu_whisper:latest
     ports:
       - 3000:3000
     restart: unless-stopped
